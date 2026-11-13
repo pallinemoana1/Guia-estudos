@@ -1,101 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-BR"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>CASAN 2026 – Guia de Estudo (Nível Médio)</title>
+<title>CASAN 2026 – Assistente Administrativo · Plataforma de Estudos</title>
+<script>(function(){var t=null;try{t=localStorage.getItem("casan_tema")}catch(e){}if(!t)t=(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";document.documentElement.setAttribute("data-theme",t)})()</script>
 <style>
-:root{--bg:#f6f8fb;--card:#fff;--tx:#14202e;--mu:#5b6b7d;--pr:#0a6fb8;--ok:#1a8a4a;--no:#c4352b;--bd:#d9e1ea;--okb:#e5f6ec;--nob:#fdeaea;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1620;--card:#16212d;--tx:#e8eef5;--mu:#98a8ba;--pr:#4aa8ec;--ok:#4cc98a;--no:#ff7b70;--bd:#2a394a;--okb:#12301f;--nob:#3a1a1a}}
-*{box-sizing:border-box}html{color-scheme:light dark;scroll-padding-top:env(safe-area-inset-top,0px)}
-body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-header{padding:18px 16px 8px;max-width:900px;margin:auto}
-h1{font-size:1.4rem;margin:0}header p{margin:4px 0 0;color:var(--mu);font-size:.9rem}
-nav{display:flex;gap:6px;overflow-x:auto;padding:8px 16px;max-width:900px;margin:auto}
-nav button{flex:none;border:1px solid var(--bd);background:var(--card);color:var(--tx);padding:8px 12px;border-radius:20px;cursor:pointer;font:inherit;font-size:.85rem}
-nav button.on{background:var(--pr);color:#fff;border-color:var(--pr)}
-main{max-width:900px;margin:auto;padding:8px 16px 40px}
-.c{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:14px 16px;margin:12px 0}
-.c h2,.c h3{margin:0 0 6px}h2{font-size:1.2rem}h3{font-size:1rem}
-.mu{color:var(--mu);font-size:.9rem}.big{font-size:2rem;font-weight:700;color:var(--pr)}
-details{border-top:1px solid var(--bd);padding:8px 0}details:first-of-type{border:0}summary{cursor:pointer;font-weight:600}
-.tbl{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.9rem}td,th{border:1px solid var(--bd);padding:6px 8px;text-align:left}
-.q p{margin:0 0 8px;font-weight:600}
-.o{display:block;width:100%;text-align:left;margin:6px 0;padding:10px 12px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--tx);font:inherit;cursor:pointer}
-.o:hover:not(:disabled){border-color:var(--pr)}.o.ok{background:var(--okb);border-color:var(--ok)}.o.no{background:var(--nob);border-color:var(--no)}
-.sel{border-color:var(--pr);background:var(--okb)}
-.ex{margin-top:8px;padding:8px 10px;border-left:3px solid var(--pr);background:var(--bg);font-size:.9rem}
-.bar{height:8px;background:var(--bd);border-radius:6px;overflow:hidden}.bar i{display:block;height:100%;background:var(--ok);width:0;transition:width .3s}
-.btn{border:0;background:var(--pr);color:#fff;padding:9px 14px;border-radius:8px;font:inherit;cursor:pointer}
+:root{--bg:#f2f6fb;--card:#fff;--tx:#0f2033;--mu:#586a80;--pr:#1d63b8;--ac:#0fb5a6;--acb:#e6f8f6;--ok:#168a4a;--no:#c4352b;--bd:#d8e2ee;--okb:#e5f6ec;--nob:#fdeaea;--warn:#c27803;--warnb:#fff6e0;--sb:#0b2545;--sbt:#d6e3f5;--sh:0 1px 2px rgba(11,37,69,.06),0 4px 14px rgba(11,37,69,.06);--hero1:#0b2545;--hero2:#1d63b8;color-scheme:light}
+[data-theme="dark"]{--bg:#07111d;--card:#0e1d2f;--tx:#e6eef7;--mu:#94a7bd;--pr:#5aa9f0;--ac:#2dd4bf;--acb:#0d2a2c;--ok:#4cc98a;--no:#ff7b70;--bd:#1f3249;--okb:#0f2f20;--nob:#3a1a1a;--warn:#f0b43c;--warnb:#2d2410;--sb:#050d17;--sbt:#c3d3e6;--sh:0 1px 2px rgba(0,0,0,.4);--hero1:#0b2545;--hero2:#14508f;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 "Segoe UI",system-ui,-apple-system,Roboto,"Helvetica Neue",Arial,sans-serif;-webkit-text-size-adjust:100%}
+button{font:inherit}h1,h2,h3{line-height:1.25}
+:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+.ic{flex:none;vertical-align:-4px}
+.app{display:flex;min-height:100vh}
+.side{width:264px;background:var(--sb);color:var(--sbt);position:fixed;top:0;bottom:0;left:0;display:flex;flex-direction:column;padding:18px 12px;overflow-y:auto;z-index:40}
+.brand{display:flex;align-items:center;gap:10px;padding:4px 8px 16px;border-bottom:1px solid rgba(255,255,255,.1);margin-bottom:6px}
+.logo{width:38px;height:38px;border-radius:11px;background:linear-gradient(135deg,var(--ac),#1d63b8);display:grid;place-items:center;color:#fff;flex:none}
+.brand b{display:block;color:#fff;font-size:1.02rem;line-height:1.2}.brand span{font-size:.76rem;opacity:.8;line-height:1.2;display:block}
+#nav{flex:1}
+.ng{font-size:.7rem;letter-spacing:.09em;text-transform:uppercase;opacity:.6;margin:16px 10px 6px}
+.ni{display:flex;align-items:center;gap:11px;width:100%;padding:10px 12px;border:0;border-radius:10px;background:none;color:var(--sbt);text-align:left;cursor:pointer}
+.ni:hover{background:rgba(255,255,255,.07)}.ni.on{background:rgba(255,255,255,.13);color:#fff;box-shadow:inset 3px 0 0 var(--ac)}
+.ni span{flex:1}.ni em{font-style:normal;background:var(--no);color:#fff;font-size:.72rem;border-radius:20px;padding:1px 8px}
+.sf{border-top:1px solid rgba(255,255,255,.1);padding-top:12px;margin-top:10px}.sf small{display:block;opacity:.65;margin-top:8px;font-size:.72rem;line-height:1.4}
+.thm{display:flex;align-items:center;gap:10px;width:100%;padding:9px 12px;border-radius:10px;border:1px solid rgba(255,255,255,.2);background:none;color:var(--sbt);cursor:pointer}
+.scrim{display:none;position:fixed;inset:0;background:rgba(3,10,20,.55);z-index:35}.scrim.on{display:block}
+.main{margin-left:264px;flex:1;min-width:0}
+.top{display:none;position:sticky;top:0;z-index:30;background:var(--sb);color:#fff;align-items:center;gap:10px;padding:calc(8px + env(safe-area-inset-top,0px)) 12px 8px}
+.top h1{flex:1;font-size:1.05rem;margin:0;font-weight:600}
+.top button{background:none;border:0;color:#fff;padding:8px;border-radius:8px;cursor:pointer;display:flex;align-items:center}.top .thm{width:auto;border:0;padding:8px}.top .thm span{display:none}
+#app{max-width:1060px;margin:0 auto;padding:24px 22px 48px}
+.bot{display:none;position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--card);border-top:1px solid var(--bd);padding:6px 4px calc(6px + env(safe-area-inset-bottom,0px))}
+.bi{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;background:none;border:0;color:var(--mu);font-size:.68rem;padding:6px 2px;cursor:pointer;border-radius:10px}.bi.on{color:var(--pr);font-weight:700}
+.c{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px 18px;margin:14px 0;box-shadow:var(--sh)}
+.c h2,.c h3{margin:0 0 8px}h2{font-size:1.3rem}h3{font-size:1.04rem}
+.mu{color:var(--mu);font-size:.9rem}.big{font-size:2.2rem;font-weight:800;color:var(--pr);line-height:1.1}
+.sec{font-size:1.05rem;margin:26px 0 4px;color:var(--tx)}
 .row{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
-
-/* ===== Identidade visual renovada: painel CASAN 2026 ===== */
-:root{
- --bg:#f3f6fb;--card:#ffffff;--tx:#17263b;--mu:#66758a;--pr:#1769aa;
- --ok:#16865b;--no:#c84444;--bd:#dce5ef;--okb:#e8f7ef;--nob:#fff0ef;
- --shadow:0 8px 24px rgba(20,43,74,.055);--radius:18px;
-}
-@media(prefers-color-scheme:dark){
- :root:not([data-theme="light"]){--bg:#0c1421;--card:#141f2e;--tx:#edf3fb;--mu:#a0aec0;--pr:#65b8f2;--ok:#5bd39b;--no:#ff8580;--bd:#2b3a4d;--okb:#153326;--nob:#3a2024;--shadow:0 10px 28px rgba(0,0,0,.18)}
-}
-html{scroll-behavior:smooth;scroll-padding-top:100px}
-body{background:radial-gradient(ellipse at 90% 0%,rgba(32,119,183,.08),transparent 34%),var(--bg);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.62;letter-spacing:.005em}
-header{position:relative;isolation:isolate;max-width:none;padding:30px max(22px,calc((100vw - 1040px)/2)) 25px;background:linear-gradient(118deg,#102d4b 0%,#124f7c 55%,#1478a5 100%);color:#fff;overflow:hidden}
-header:after{content:"";position:absolute;z-index:-1;width:340px;height:340px;border:1px solid rgba(255,255,255,.12);border-radius:50%;right:8%;top:-230px;box-shadow:0 0 0 34px rgba(255,255,255,.035),0 0 0 72px rgba(255,255,255,.025)}
-header h1{font-size:clamp(1.45rem,3vw,2rem);font-weight:780;letter-spacing:-.035em;line-height:1.2}
-header p{color:rgba(255,255,255,.78);font-size:.92rem;margin-top:9px;max-width:760px}
-nav{position:sticky;top:0;z-index:20;max-width:none;padding:11px max(16px,calc((100vw - 1040px)/2));background:color-mix(in srgb,var(--card) 91%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--bd);box-shadow:0 4px 18px rgba(15,35,60,.045);scrollbar-width:thin}
-nav button{font-size:.84rem;font-weight:650;border-radius:999px;padding:9px 14px;transition:background .18s,border-color .18s,transform .18s}
-nav button:hover{transform:translateY(-1px);border-color:var(--pr)}
-nav button.on{background:linear-gradient(135deg,#1769aa,#1684ad);border-color:transparent;box-shadow:0 5px 14px rgba(23,105,170,.22)}
-main{max-width:1080px;padding:22px 20px 56px}
-.c{background:var(--card);border:1px solid var(--bd);border-radius:var(--radius);padding:19px 21px;margin:14px 0;box-shadow:var(--shadow);transition:border-color .18s,box-shadow .18s}
-.c h2{font-size:1.16rem;font-weight:760;letter-spacing:-.02em;margin-bottom:9px}
-.c h3{font-size:1rem;font-weight:740;letter-spacing:-.01em}
-.mu{color:var(--mu);font-size:.9rem}
-.big{font-size:clamp(2rem,5vw,2.8rem);font-weight:820;letter-spacing:-.05em;color:var(--pr);line-height:1.15}
-#app>h2{font-size:1.2rem;margin:25px 0 12px;font-weight:780}
-details{border-top:1px solid var(--bd);padding:12px 0}
-summary{font-weight:700;line-height:1.45;cursor:pointer;list-style:none;display:flex;align-items:flex-start;gap:10px}
-summary::-webkit-details-marker{display:none}
-summary:before{content:"+";display:inline-grid;place-items:center;flex:0 0 23px;width:23px;height:23px;border-radius:7px;background:color-mix(in srgb,var(--pr) 11%,var(--card));color:var(--pr);font-weight:800}
-details[open]>summary:before{content:"−"}
-details>p,details>ul,details>ol{margin:12px 0 5px}
-.tbl{border-radius:12px;overflow:auto;border:1px solid var(--bd)}
-table{border-collapse:collapse;width:100%;font-size:.9rem;background:var(--card)}
-td,th{border:0;border-bottom:1px solid var(--bd);padding:10px 12px;text-align:left}
-th{background:color-mix(in srgb,var(--pr) 9%,var(--card));font-weight:750;color:var(--tx)}
-tr:last-child td{border-bottom:0}
-.q{position:relative;overflow:hidden}
-.q p{line-height:1.5;margin:0 0 12px;font-weight:720}
-.o{display:block;width:100%;text-align:left;margin:8px 0;padding:12px 14px;border:1px solid var(--bd);border-radius:12px;background:var(--bg);color:var(--tx);font:inherit;cursor:pointer;transition:transform .15s,border-color .15s,background .15s}
-.o:hover:not(:disabled){border-color:var(--pr);transform:translateX(2px)}
-.o:disabled{cursor:default;opacity:1}
-.o.ok{background:var(--okb);border-color:var(--ok);font-weight:650}
-.o.no{background:var(--nob);border-color:var(--no)}
-.sel{border-color:var(--pr);background:color-mix(in srgb,var(--pr) 12%,var(--card));box-shadow:inset 0 0 0 1px var(--pr)}
-.ex{margin-top:12px;padding:12px 14px;border-left:4px solid var(--pr);border-radius:0 10px 10px 0;background:color-mix(in srgb,var(--pr) 7%,var(--card));font-size:.92rem;line-height:1.55}
-.bar{height:10px;background:var(--bd);border-radius:999px;overflow:hidden}
-.bar i{display:block;height:100%;background:linear-gradient(90deg,#16865b,#43b98b);border-radius:999px;transition:width .35s}
-.btn{border:0;background:linear-gradient(135deg,#1769aa,#1684ad);color:#fff;padding:10px 16px;border-radius:11px;font:inherit;font-weight:700;cursor:pointer;box-shadow:0 4px 12px rgba(23,105,170,.16);transition:transform .15s,filter .15s}
-.btn:hover{filter:brightness(1.06);transform:translateY(-1px)}
-.btn:focus-visible,nav button:focus-visible,.o:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid color-mix(in srgb,var(--pr) 55%,transparent);outline-offset:2px}
-.row{gap:12px}
-input[type=checkbox]{accent-color:var(--pr);width:18px;height:18px;flex:0 0 auto}
-a{color:var(--pr)}
-#toast{font-weight:600;backdrop-filter:blur(12px)}
-@media(min-width:900px){main{padding-top:28px}.c{padding:21px 24px}.c:hover{border-color:color-mix(in srgb,var(--pr) 30%,var(--bd))}}
-@media(max-width:640px){header{padding:24px 18px 21px}nav{padding:9px 12px;gap:7px}nav button{padding:8px 12px;font-size:.8rem}main{padding:14px 12px 38px}.c{padding:15px 15px;border-radius:15px;margin:11px 0}.big{font-size:2.15rem}.o{padding:11px 12px}}
-@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
-
+.btn{max-width:100%;display:inline-flex;align-items:center;gap:7px;border:0;background:var(--pr);color:#fff;padding:10px 16px;border-radius:10px;font-weight:600;cursor:pointer;text-decoration:none}
+.btn:hover{filter:brightness(1.08)}.btn:disabled{opacity:.45;cursor:not-allowed}
+.btn.sec{background:var(--card);color:var(--pr);border:1.5px solid var(--pr)}.btn.ac{background:var(--ac);color:#04302c}.btn.ghost{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.35)}
+.lnk{background:none;border:0;color:var(--pr);text-decoration:underline;cursor:pointer;padding:0}
+.badge{display:inline-block;background:var(--acb);color:var(--pr);border-radius:20px;padding:2px 10px;font-size:.76rem;font-weight:600}.badge.pd{background:var(--warnb);color:var(--warn)}
+.hero{display:flex;gap:20px;justify-content:space-between;align-items:center;flex-wrap:wrap;background:linear-gradient(120deg,var(--hero1),var(--hero2));color:#fff;border-radius:18px;padding:24px 26px;box-shadow:var(--sh)}
+.hero h2{font-size:1.65rem;margin:4px 0 6px;color:#fff}.hero .eyebrow{margin:0;color:var(--ac);font-weight:700}.hero .hp{margin:0 0 16px;opacity:.85;font-size:.92rem}
+.acts{display:flex;gap:10px;flex-wrap:wrap}
+.cd{text-align:center;background:rgba(255,255,255,.12);border-radius:14px;padding:14px 22px;min-width:150px}.cd .big{color:#fff;font-size:2.6rem}
+.nm{margin:10px 2px 0;display:flex;gap:8px;align-items:center;flex-wrap:wrap}.nm input{padding:8px 10px;border:1px solid var(--bd);border-radius:8px;background:var(--card);color:var(--tx);font:inherit}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:14px 0}
+.kpi{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:14px 16px;box-shadow:var(--sh);display:flex;flex-direction:column;gap:4px}
+.kl{font-size:.78rem;color:var(--mu);text-transform:uppercase;letter-spacing:.05em;font-weight:600}.kv{font-size:1.8rem;color:var(--pr);line-height:1.1}.ks{font-size:.8rem;color:var(--mu)}
+.bar{height:9px;background:var(--bd);border-radius:6px;overflow:hidden;margin:6px 0}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--ac),var(--pr));width:0;transition:width .3s}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}.grid2 .c{margin:0}
+.dc{display:flex;flex-direction:column;gap:6px;margin:0}.dc h3{margin:0}.dc .row{margin-top:6px}
+.tile{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:14px 16px;box-shadow:var(--sh);cursor:pointer;text-align:left;color:var(--tx)}.tile:hover{border-color:var(--ac)}.tile .ic{color:var(--ac)}.tile b{display:block}.tile span{font-size:.82rem;color:var(--mu)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}.chip{border:1px solid var(--bd);background:var(--card);color:var(--tx);border-radius:20px;padding:6px 14px;cursor:pointer;font-size:.88rem}.chip.on{background:var(--pr);color:#fff;border-color:var(--pr)}
+.tbl{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.92rem}th{background:var(--acb);color:var(--tx)}td,th{border:1px solid var(--bd);padding:8px 10px;text-align:left}
+details{border-top:1px solid var(--bd);padding:8px 0}details:first-of-type{border:0}summary{cursor:pointer;font-weight:600}
+.q>p{margin:0 0 10px;font-weight:600}
+.o{display:flex;gap:12px;align-items:flex-start;width:100%;text-align:left;margin:8px 0;padding:12px 14px;border:1.5px solid var(--bd);border-radius:12px;background:var(--card);color:var(--tx);cursor:pointer;transition:border-color .15s,background .15s}
+.o .lt{flex:none;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--bg);border:1.5px solid var(--bd);font-weight:700;font-size:.85rem}
+.o:hover:not(:disabled){border-color:var(--ac)}.o:disabled{color:var(--tx);cursor:default}
+.o.ok{background:var(--okb);border-color:var(--ok)}.o.ok .lt{background:var(--ok);border-color:var(--ok);color:#fff}
+.o.no{background:var(--nob);border-color:var(--no)}.o.no .lt{background:var(--no);border-color:var(--no);color:#fff}
+.sel{border-color:var(--pr);background:var(--acb)}.sel .lt{background:var(--pr);border-color:var(--pr);color:#fff}
+.ex{margin-top:10px;padding:10px 12px;border-left:4px solid var(--ac);background:var(--acb);border-radius:0 8px 8px 0;font-size:.92rem}
+.fb{margin-top:12px;padding:10px 14px;border-radius:10px;font-weight:700}.fb.ok{background:var(--okb);color:var(--ok)}.fb.no{background:var(--nob);color:var(--no)}
+.cl-n{background:var(--warnb);border:1px solid var(--warn);border-radius:12px;padding:10px 14px;margin:14px 0;font-size:.9rem}
+.ls{position:relative}.ls h3 .ic{margin-right:4px}.ls.exm{border-left:5px solid var(--pr)}.ls.tip{border-left:5px solid var(--ac);background:var(--acb)}.ls.warn{border-left:5px solid var(--warn);background:var(--warnb)}.ls.sum{border-left:5px solid var(--ok);background:var(--okb)}
+.ls ul,.ls ol{padding-left:22px}.ls li{margin:4px 0}.ls p{margin:.55em 0}
+pre{background:var(--bg);border:1px solid var(--bd);border-radius:10px;padding:12px;overflow-x:auto;font:13px/1.5 Consolas,Menlo,monospace;white-space:pre}
+.toc{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}.toc button{border:1px solid var(--bd);background:var(--card);color:var(--tx);border-radius:8px;padding:4px 10px;font-size:.8rem;cursor:pointer}
+.st{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;flex:none}.st.ok{background:var(--okb);color:var(--ok)}.st.pd{background:var(--warnb);color:var(--warn)}
+.it{display:flex;gap:10px;align-items:flex-start;padding:9px 0;border-top:1px solid var(--bd)}.it .tx{flex:1;min-width:0;overflow-wrap:anywhere}.it .btn,.it .badge{flex:none}
+.bch{display:flex;flex-direction:column;gap:10px}.br{display:grid;grid-template-columns:130px 1fr 44px;gap:8px;align-items:center;font-size:.88rem}.bt{height:12px;background:var(--bd);border-radius:7px;overflow:hidden}.bt i{display:block;height:100%;background:linear-gradient(90deg,var(--ac),var(--pr))}.bv{text-align:right;font-weight:700}
+.chart{width:100%;height:auto;display:block}.chart .gl{stroke:var(--bd);stroke-width:1}.chart .gt{fill:var(--mu);font-size:9px}.chart .gp{fill:none;stroke:var(--pr);stroke-width:2.5}.chart .gd{fill:var(--ac);stroke:var(--pr);stroke-width:2}.chart .cb{fill:var(--pr)}
+.qh{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:10px}
+.empty{text-align:center;padding:26px 10px;color:var(--mu)}
+@media(max-width:900px){.side{transform:translateX(-102%);transition:transform .25s;width:285px}.side.open{transform:none;box-shadow:0 0 30px rgba(0,0,0,.4)}.main{margin-left:0}.top{display:flex}.bot{display:flex}#app{padding:16px 14px calc(88px + env(safe-area-inset-bottom,0px))}.hero{padding:20px 18px}.hero h2{font-size:1.35rem}.cd{width:100%}.br{grid-template-columns:96px 1fr 40px}}
+@media(max-width:480px){.it{flex-wrap:wrap}.it .tx{flex:1 1 calc(100% - 46px)}.it .btn,.it .badge{margin-left:36px}.kpis{grid-template-columns:1fr 1fr}.btn{padding:10px 12px}.acts .btn{flex:1;justify-content:center}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
 </style></head><body>
-<header><h1>💧 CASAN 2026 – Guia de Estudo</h1><p>Edital 001/2026 · Nível Médio · Cargo 202: Assistente Administrativo · Instituto AOCP</p></header>
-<nav id="nav"></nav><main id="app"></main>
+<div class="app">
+<aside class="side" id="side">
+<div class="brand"><div class="logo"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></div><div><b>CASAN 2026</b><span>Assistente Administrativo</span></div></div>
+<nav id="nav" aria-label="Menu principal"></nav>
+<div class="sf"><button class="thm" data-th="1"></button><small>Edital 001/2026 · Instituto AOCP · Cargo 202. Confirme sempre o edital oficial.</small></div>
+</aside>
+<div class="scrim" id="scrim" data-mb=""></div>
+<div class="main">
+<header class="top"><button data-mb="" aria-label="Abrir menu" id="mb"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><h1 id="ttl">CASAN 2026</h1><button class="thm" data-th="1"></button></header>
+<main id="app"></main>
+</div>
+<nav class="bot" id="bot" aria-label="Atalhos"></nav>
+</div>
 <script>
 var M=[
-{id:"home",t:"Visão geral",home:1},
-{id:"cr",t:"⏰ Cronograma",cr:1},
-{id:"au",t:"🎓 Aulas",au:1},
-{id:"ed",t:"📋 Edital",ed:1},
-{id:"sim",t:"📝 Simulado",sim:1},
+{id:"home",t:"Início",home:1},
+{id:"cr",t:"Cronograma",cr:1},
+{id:"au",t:"Aulas",au:1},
+{id:"ed",t:"Edital",ed:1},
+{id:"sim",t:"Simulado",sim:1},
+{id:"qs",t:"Questões",qs:1},
+{id:"er",t:"Caderno de erros",er:1},
+{id:"pf",t:"Desempenho",pf:1},
 {id:"pt",t:"Língua Portuguesa",n:[
 ["Interpretação e gêneros","Leia o texto antes das questões e busque a <b>ideia central</b>. Gêneros textuais variam em finalidade (informar, persuadir, instruir). Em inferência, só vale o que o texto permite concluir."],
 ["Crase","Ocorre com <b>a (preposição) + a (artigo/pronome)</b>. Teste: troque a palavra feminina por uma masculina; se aparecer “ao”, há crase (“Fui ao mercado” → “Fui à feira”). Não há crase antes de verbo, pronome pessoal ou palavra masculina."],
@@ -147,7 +155,7 @@ q:[["Qual tecla renomeia um arquivo selecionado no Windows?",["F1","F2","F5","F1
 ["Mensagem falsa que imita um banco para obter senhas caracteriza:",["Phishing","Backup","Firewall","Cookie"],0,"É um golpe de phishing."],
 ["A Lei Geral de Proteção de Dados é a Lei nº:",["12.527/2011","13.709/2018","8.112/1990","9.784/1999"],1,"LGPD = Lei 13.709/2018."]]},
 {id:"es",t:"Conhecimentos Específicos",n:[
-["Aviso importante","Este módulo é uma versão preliminar, anterior à leitura do Anexo III, e não segue fielmente o edital. Use a aba <b>📋 Edital</b> para ver a cobertura real e a aba <b>🎓 Aulas</b> para o material novo, alinhado ao Anexo III."],
+["Aviso importante","Este módulo é uma versão preliminar, anterior à leitura do Anexo III, e não segue fielmente o edital. Use a aba <b>Edital</b> para ver a cobertura real e a aba <b>Aulas</b> para o material novo, alinhado ao Anexo III."],
 ["Empresas estatais","A CASAN é sociedade de economia mista. Lei 13.303/2016: estatuto jurídico da empresa pública, da sociedade de economia mista e de suas subsidiárias, inclusive licitações e contratos. Empregados seguem a CLT (empregados públicos, admitidos por concurso)."],
 ["Administração geral","Funções: planejar, organizar, dirigir e controlar. Ciclo PDCA: Plan (planejar), Do (executar), Check (verificar), Act (agir corretivamente)."],
 ["Arquivo e documentos","Ciclo: arquivo corrente (uso frequente), intermediário (uso eventual) e permanente (valor histórico, guarda definitiva)."],
@@ -164,21 +172,128 @@ function save(){try{localStorage.setItem("casan",JSON.stringify(S))}catch(e){}}
 var cur="home",app=document.getElementById("app"),nav=document.getElementById("nav");
 function sc(m){var a=S[m.id]||{},c=0;for(var k in a)if(a[k]===m.q[k][2])c++;return c}
 function dn(m){return Object.keys(S[m.id]||{}).length}
-function tabs(){nav.innerHTML="";M.forEach(function(m){var b=document.createElement("button");b.textContent=m.t;if(m.id==cur)b.className="on";b.onclick=function(){cur=m.id;draw();scrollTo(0,0)};nav.appendChild(b)})}
-function draw(){tabs();var m=M.filter(function(x){return x.id==cur})[0];app.innerHTML=m.home?home():m.cr?cron():m.sim?simR():m.au?auR():m.ed?edR():mod(m);if(m.cr)cronWire();else if(m.au)auWire();else if(!m.home&&!m.sim&&!m.ed)wire(m)}
-function home(){var d=Math.ceil((new Date(2026,10,22)-new Date(new Date().toDateString()))/864e5),tot=0,ok=0,dd=0;M.forEach(function(m){if(m.q){tot+=m.q.length;ok+=sc(m);dd+=dn(m)}});
-var cd=d>0?'<div class="big">'+d+' dia'+(d>1?'s':'')+'</div><div class="mu">para a prova objetiva (domingo, 22/11/2026, de manhã)</div>':d==0?'<div class="big">É hoje!</div>':'<div class="big">Prova realizada</div><div class="mu">Confira publicações oficiais do Instituto AOCP.</div>';
-return '<div class="c">'+cd+'</div><div class="c"><h2>Seu progresso</h2><div class="bar"><i style="width:'+(dd/tot*100)+'%"></i></div><p class="mu">'+dd+' de '+tot+' questões respondidas · '+ok+' acertos</p></div>'+
-'<div class="c"><h2>Estrutura da prova (nível médio)</h2><div class="tbl"><table><tr><th>Disciplina</th><th>Questões</th></tr><tr><td>Língua Portuguesa</td><td>10</td></tr><tr><td>Raciocínio Lógico-Matemático</td><td>10</td></tr><tr><td>Conhecimentos Gerais e Atualidades</td><td>5</td></tr><tr><td>Informática</td><td>5</td></tr><tr><td>Conhecimentos Específicos</td><td>20</td></tr></table></div><p class="mu">Total: 50 questões. Banca: Instituto AOCP. Salário inicial: R$ 3.430,37, 40 h semanais, regime CLT. Confirme tudo no edital oficial.</p></div>'+
-'<div class="c"><h2>Plano sugerido por peso</h2><p>Específicos têm o maior peso (40%), depois Português e Raciocínio (20% cada). Dedique mais tempo a eles, revise Informática e Atualidades com questões curtas diárias e, nos últimos dois dias, refaça as questões que errou.</p></div>'+
-'<div class="c"><h2>Módulos</h2>'+M.filter(function(m){return m.q}).map(function(m){return '<div class="row" style="padding:6px 0"><span>'+m.t+'</span><span class="mu">'+sc(m)+'/'+m.q.length+'</span></div>'}).join("")+'</div>'}
-function mod(m){var h='<div class="c"><h2>'+m.t+'</h2><p class="mu">Leia o resumo e depois responda às questões.</p>'+m.n.map(function(n){return '<details><summary>'+n[0]+'</summary><p>'+n[1]+'</p></details>'}).join("")+'</div><h2>Atividades</h2>';
-m.q.forEach(function(q,i){h+='<div class="c q" id="q'+i+'"><p>'+(i+1)+'. '+q[0]+'</p>'+q[1].map(function(o,j){return '<button class="o" data-i="'+i+'" data-j="'+j+'">'+String.fromCharCode(65+j)+') '+o+'</button>'}).join("")+'<div class="ex" hidden></div></div>'});
+var IC={home:'<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>',cal:'<rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>',book:'<path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>',layers:'<polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/>',help:'<circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/>',clip:'<path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/>',warn:'<path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>',chart:'<line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>',file:'<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>',sun:'<circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>',moon:'<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>',play:'<polygon points="5 3 19 12 5 21 5 3"/>',check:'<polyline points="20 6 9 17 4 12"/>',clock:'<circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>',info:'<circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/>',star:'<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>',arrow:'<line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>'};
+function ic(n,s){s=s||20;return '<svg class="ic" width="'+s+'" height="'+s+'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+IC[n]+'</svg>'}
+var NL={home:"Início",cr:"Cronograma",ed:"Edital",au:"Aulas",pt:"Português",rl:"Raciocínio Lógico",cg:"Conhec. Gerais",in:"Informática",es:"Específicos",qs:"Questões",sim:"Simulado",er:"Caderno de erros",pf:"Desempenho"};
+var SN={pt:"Português",rl:"Raciocínio",cg:"Conhec. Gerais",in:"Informática",es:"Específicos"};
+var BL={home:"Início",au:"Aulas",qs:"Questões",sim:"Simulado",pf:"Desempenho"};
+var ICN={home:"home",cr:"cal",ed:"file",au:"book",pt:"layers",rl:"layers",cg:"layers",in:"layers",es:"layers",qs:"help",sim:"clip",er:"warn",pf:"chart"};
+var NAVG=[["Principal",["home","cr","ed"]],["Estudar",["au"]],["Material preliminar",["pt","rl","cg","in","es"]],["Praticar",["qs","sim","er"]],["Análise",["pf"]]];
+function nmod(id){return M.filter(function(x){return x.id==id})[0]}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function greet(){var h=new Date().getHours();return h<12?"Bom dia":h<18?"Boa tarde":"Boa noite"}
+function pct(a,b){return b?Math.round(a/b*100):null}
+function fmtT(s){var h=Math.floor(s/3600),m=Math.floor(s%3600/60),x=s%60;return (h?h+":":"")+(h&&m<10?"0":"")+m+":"+(x<10?"0":"")+x}
+function dkey(d){return d.getFullYear()+"-"+(d.getMonth()+1)+"-"+d.getDate()}
+function bump(){S.act=S.act||{};var k=dkey(new Date());S.act[k]=(S.act[k]||0)+1;save()}
+function POOL(){var P=[];
+Object.keys(L).forEach(function(k){L[k].q.forEach(function(q,i){P.push({key:"a:"+k+":"+i,d:k.slice(0,2),src:"a",lab:"Aula "+L[k].t.split(" · ")[0],q:q,k:k,get:function(){return((S.au||{})[k]||{})[i]},set:function(v){S.au=S.au||{};S.au[k]=S.au[k]||{};S.au[k][i]=v}})})});
+["pt","rl","cg","in","es"].forEach(function(id){EX[id].forEach(function(q,j){var key="x:"+id+":"+j;P.push({key:key,d:id,src:"x",lab:"Treino adicional",q:q,top:q[4],mod:id,get:function(){return(S.xq||{})[key]},set:function(v){S.xq=S.xq||{};S.xq[key]=v}})})});
+["pt","rl","cg","in","es"].forEach(function(id){nmod(id).q.forEach(function(q,i){P.push({key:"m:"+id+":"+i,d:id,src:"m",lab:"Material preliminar (4 alternativas)",q:q,top:TOP[id][i],mod:id,get:function(){return(S[id]||{})[i]},set:function(v){S[id]=S[id]||{};S[id][i]=v}})})});
+return P}
+function PMAP(){var m={};POOL().forEach(function(p){m[p.key]=p});return m}
+function ERRS(){var o=[];POOL().forEach(function(p){var a=p.get(),bad=(a!==undefined&&a!==p.q[2])||(S.se||{})[p.key];if(bad&&!(S.rs||{})[p.key])o.push(p)});return o}
+function ECOUNT(){try{return ERRS().length}catch(e){return 0}}
+function STATS(){var by={},tot={n:0,ok:0};SUB.forEach(function(s){by[s[0]]={n:0,ok:0}});POOL().forEach(function(p){var a=p.get();if(a===undefined)return;by[p.d].n++;tot.n++;if(a===p.q[2]){by[p.d].ok++;tot.ok++}});return{by:by,tot:tot}}
+function lastInfo(){var l=S.last;if(l&&l.t=="au"&&L[l.k])return{lab:L[l.k].t,go:'data-au="'+l.k+'"'};if(l&&l.t=="mod"&&nmod(l.id))return{lab:"Material preliminar · "+NL[l.id],go:'data-nv="'+l.id+'"'};return{lab:L.es1.t,go:'data-au="es1"',first:1}}
+function tabs(){var h="",ec=ECOUNT();NAVG.forEach(function(g){h+='<div class="ng">'+g[0]+'</div>';g[1].forEach(function(id){h+='<button class="ni'+(id==cur?' on':'')+'" data-nv="'+id+'">'+ic(ICN[id],18)+'<span>'+NL[id]+'</span>'+(id=="er"&&ec?'<em>'+ec+'</em>':'')+'</button>'})});nav.innerHTML=h;
+var b="";["home","au","qs","sim","pf"].forEach(function(id){b+='<button class="bi'+(id==cur?' on':'')+'" data-nv="'+id+'">'+ic(ICN[id],22)+'<span>'+BL[id]+'</span></button>'});document.getElementById("bot").innerHTML=b;document.getElementById("ttl").textContent=NL[cur]||""}
+function draw(){tabs();var m=nmod(cur),h;
+if(m.home)h=home();else if(m.cr)h=cron();else if(m.sim)h=simR();else if(m.au)h=auR();else if(m.ed)h=edR();else if(m.qs)h=qvR();else if(m.er)h=erR();else if(m.pf)h=pfR();else{h=mod(m);S.last={t:"mod",id:m.id};save()}
+app.innerHTML=h;
+if(m.cr)cronWire();else if(m.au)auWire();else if(m.q)wire(m)}
+function kpi(l,v,s,b){return '<div class="kpi"><span class="kl">'+l+'</span><b class="kv">'+v+'</b>'+(b!=null?'<div class="bar"><i style="width:'+b+'%"></i></div>':'')+'<span class="ks">'+s+'</span></div>'}
+function home(){var d=Math.ceil((new Date(2026,10,22)-new Date(new Date().toDateString()))/864e5),st=STATS(),estud=0,disp=Object.keys(L).length,nb=0,sh=S.sh||[],crd=0,best=0,li=lastInfo(),ne=ECOUNT(),np=POOL().length;
+SUB.forEach(function(s){nb+=CK[s[0]].length});Object.keys(S.dn||{}).forEach(function(k){if(S.dn[k])estud++});Object.keys(S.cr||{}).forEach(function(k){if(S.cr[k])crd++});sh.forEach(function(x){best=Math.max(best,Math.round(x.ok/x.n*100))});
+var cdv=d>0?'<div class="big">'+d+'</div><div>dia'+(d>1?'s':'')+' para a prova<br>22/11/2026</div>':d==0?'<div class="big">Hoje</div><div>é dia de prova</div>':'<div class="big">Prova</div><div>realizada em 22/11/2026</div>';
+var h='<section class="hero"><div><p class="eyebrow">'+greet()+(S.nm?", "+esc(S.nm):", estudante")+'!</p><h2>Seu caminho até a aprovação na CASAN</h2><p class="hp">Cargo 202 · Assistente Administrativo · Edital 001/2026 · Instituto AOCP</p><div class="acts"><button class="btn ac" '+li.go+'>'+ic("play",16)+' '+(li.first?"Começar a primeira aula":"Continuar: "+esc(li.lab))+'</button><button class="btn ghost" data-nv="sim">'+ic("clip",16)+' Fazer simulado</button><button class="btn ghost" data-nv="er">'+ic("warn",16)+' Caderno de erros'+(ne?' ('+ne+')':'')+'</button></div></div><div class="cd">'+cdv+'</div></section>';
+h+='<div class="nm">'+(S.nm?'<span class="mu">Estudando como <b>'+esc(S.nm)+'</b></span> <button class="lnk" data-sn="e">alterar nome</button>':'<input id="nmi" type="text" maxlength="30" placeholder="Seu nome (opcional)" aria-label="Seu nome"> <button class="btn sec" data-sn="s">Salvar nome</button>')+'</div>';
+h+='<div class="kpis">'+kpi("Edital estudado",pct(estud,nb)+"%",estud+" de "+nb+" itens estudados · "+disp+" aulas prontas",pct(estud,nb))+kpi("Questões respondidas",st.tot.n,"de "+np+" no banco",pct(st.tot.n,np))+kpi("Taxa de acerto",st.tot.n?pct(st.tot.ok,st.tot.n)+"%":"—",st.tot.n?st.tot.ok+" acertos em "+st.tot.n:"Responda questões para calcular",st.tot.n?pct(st.tot.ok,st.tot.n):0)+kpi("Simulados",sh.length,sh.length?"Melhor nota: "+best+"%":"Nenhum realizado ainda")+kpi("Cronograma",crd+"/"+CR.length,"blocos concluídos",pct(crd,CR.length))+'</div>';
+h+='<h2 class="sec">Próxima atividade do cronograma</h2><div id="now">'+nowCard()+'</div>';
+h+='<h2 class="sec">Disciplinas do edital</h2><div class="grid">';
+SUB.forEach(function(s){var id=s[0],n=CK[id].length,dv=0,es=0,b=st.by[id];CK[id].forEach(function(t,i){var k=id+(i+1);if(L[k]){dv++;if((S.dn||{})[k])es++}});
+h+='<div class="c dc"><div class="row"><h3>'+s[1]+'</h3><span class="badge">'+s[2]+'</span></div><div class="bar"><i style="width:'+pct(es,n)+'%"></i></div><span class="mu">'+es+' de '+n+' itens estudados · '+dv+' com aula pronta</span><span class="mu">'+(b.n?b.n+' questões respondidas · '+pct(b.ok,b.n)+'% de acerto':'Nenhuma questão respondida ainda')+'</span><div class="row"><button class="btn" data-df="'+id+'">Ver aulas '+ic("arrow",16)+'</button></div></div>'});
+h+='</div><h2 class="sec">Acesso rápido</h2><div class="grid"><button class="tile" data-nv="sim">'+ic("clip",24)+'<div><b>Simulados</b><span>10 por matéria ou 50 completo</span></div></button><button class="tile" data-nv="er">'+ic("warn",24)+'<div><b>Caderno de erros</b><span>'+(ne?ne+' questões para revisar':'Nenhum erro registrado')+'</span></div></button><button class="tile" data-nv="qs">'+ic("help",24)+'<div><b>Resolver questões</b><span>'+np+' no banco, com comentários</span></div></button><button class="tile" data-nv="pf">'+ic("chart",24)+'<div><b>Desempenho</b><span>Gráficos e estatísticas reais</span></div></button></div>';
+var tq=0,ok=0,dd=0;M.forEach(function(m){if(m.q){tq+=m.q.length;ok+=sc(m);dd+=dn(m)}});
+h+='<h2 class="sec">Informações da prova</h2><div class="c"><h3>Estrutura da prova (nível médio)</h3><div class="tbl"><table><tr><th>Disciplina</th><th>Questões</th></tr><tr><td>Língua Portuguesa</td><td>10</td></tr><tr><td>Raciocínio Lógico-Matemático</td><td>10</td></tr><tr><td>Conhecimentos Gerais e Atualidades</td><td>5</td></tr><tr><td>Informática</td><td>5</td></tr><tr><td>Conhecimentos Específicos</td><td>20</td></tr></table></div><p class="mu">Total: 50 questões. Banca: Instituto AOCP. Salário inicial: R$ 3.430,37, 40 h semanais, regime CLT. Confirme tudo no edital oficial.</p></div>'+
+'<div class="c"><h3>Plano sugerido por peso</h3><p>Específicos têm o maior peso (40%), depois Português e Raciocínio (20% cada). Dedique mais tempo a eles, revise Informática e Atualidades com questões curtas diárias e, nos últimos dois dias, refaça as questões que errou.</p></div>'+
+'<div class="c"><h3>Módulos (material preliminar)</h3><p class="mu">'+dd+' de '+tq+' questões respondidas · '+ok+' acertos</p>'+M.filter(function(m){return m.q}).map(function(m){return '<div class="row" style="padding:6px 0"><span>'+m.t+'</span><span class="mu">'+sc(m)+'/'+m.q.length+'</span></div>'}).join("")+'</div>';
+return h}
+var AUF=null;
+function auR(){if(AUC)return lesson(AUC);
+var h='<div class="c"><h2>Aulas</h2><p class="mu">Aulas completas, alinhadas ao Anexo III, com explicação, conceitos, exemplos, aplicações, quadros comparativos, memorização, pegadinhas, resumo, mapa mental, questões de fixação (5 alternativas) e gabarito comentado. As questões são de treino, elaboradas para este site; não são questões oficiais da AOCP. Itens sem aula aparecem como pendentes.</p><div class="chips"><button class="chip'+(AUF?'':' on')+'" data-df="all">Todas</button>'+SUB.map(function(s){return '<button class="chip'+(AUF==s[0]?' on':'')+'" data-df="'+s[0]+'">'+SN[s[0]]+'</button>'}).join("")+'</div></div>';
+SUB.forEach(function(s){if(AUF&&AUF!=s[0])return;var id=s[0],a=CK[id],dv=0,es=0;a.forEach(function(t,i){var k=id+(i+1);if(L[k]){dv++;if((S.dn||{})[k])es++}});
+h+='<section class="c"><div class="row"><h3>'+s[1]+'</h3><span class="badge">'+s[2]+'</span></div><div class="bar"><i style="width:'+pct(es,a.length)+'%"></i></div><p class="mu">'+dv+' de '+a.length+' itens com aula pronta · '+es+' estudados</p>'+a.map(function(t,i){var k=id+(i+1),ok=!!L[k],p=t.indexOf(" ("),mn=p>0?t.slice(0,p):t,sb=p>0?t.slice(p+2,-1):"";
+return '<div class="it"><span class="st '+(ok?'ok':'pd')+'">'+ic(ok?"check":"clock",15)+'</span><div class="tx"><b>'+(i+1)+'. '+mn+'</b>'+(sb?'<br><span class="mu">'+sb+'</span>':'')+'</div>'+(ok?'<button class="btn'+((S.dn||{})[k]?' sec':'')+'" data-au="'+k+'">'+((S.dn||{})[k]?'Revisar':'Abrir aula')+'</button>':'<span class="badge pd">Pendente</span>')+'</div>'}).join("")+'<div class="row" style="margin-top:10px"><button class="btn sec" data-nv="'+id+'">Material preliminar de '+SN[id]+'</button></div></section>'});
+return h}
+var QV={d:"all",s:"all",u:false,list:null,i:0,mode:"free",sess:{}};
+function qvBuild(){QV.list=POOL().filter(function(p){return(QV.d=="all"||p.d==QV.d)&&(QV.s=="all"||p.src==QV.s)&&(!QV.u||p.get()===undefined)}).map(function(p){return p.key});QV.i=0;QV.mode="free";QV.sess={}}
+function qvR(){if(!QV.list)qvBuild();var P=PMAP(),key=QV.list[QV.i],p=key&&P[key],n=QV.list.length,retry=QV.mode=="retry",
+h='<div class="c"><h2>'+(retry?'Revisão de erros':'Resolver questões')+'</h2>';
+if(retry)h+='<p class="mu">Acertando a questão aqui, ela sai do caderno de erros.</p><div class="row"><button class="btn sec" data-qx="free">Voltar ao banco de questões</button></div>';
+else h+='<p class="mu">Responda e veja o comentário na hora. Suas respostas ficam salvas neste navegador.</p><div class="chips" role="group" aria-label="Disciplina"><button class="chip'+(QV.d=="all"?' on':'')+'" data-qd="all">Todas</button>'+SUB.map(function(s){return '<button class="chip'+(QV.d==s[0]?' on':'')+'" data-qd="'+s[0]+'">'+SN[s[0]]+'</button>'}).join("")+'</div><div class="chips" role="group" aria-label="Origem">'+[["all","Todas as origens"],["a","Aulas (5 alternativas)"],["x","Treino adicional"],["m","Material preliminar"]].map(function(o){return '<button class="chip'+(QV.s==o[0]?' on':'')+'" data-qsr="'+o[0]+'">'+o[1]+'</button>'}).join("")+'<button class="chip'+(QV.u?' on':'')+'" data-qu="1">Só não respondidas</button></div>';
+h+='</div>';
+if(!p)return h+'<div class="c empty">'+ic("info",28)+'<p>'+(retry?'Nenhum erro para revisar.':'Nenhuma questão com esse filtro.')+'</p></div>';
+var a=retry?QV.sess[key]:p.get(),q=p.q,done=a!==undefined;
+h+='<div class="c q"><div class="qh"><b>Questão '+(QV.i+1)+' de '+n+'</b><span class="badge">'+SN[p.d]+'</span><span class="mu">'+p.lab+'</span></div><div class="bar"><i style="width:'+pct(QV.i+1,n)+'%"></i></div><p>'+q[0]+'</p>'+q[1].map(function(o,j){return '<button class="o'+(done?(j==q[2]?' ok':(j==a?' no':'')):'')+'"'+(done?' disabled':'')+' data-qa="'+j+'"><span class="lt">'+String.fromCharCode(65+j)+'</span><span>'+o+'</span></button>'}).join("");
+if(done)h+='<div class="fb '+(a==q[2]?'ok':'no')+'">'+(a==q[2]?'Resposta correta.':'Resposta incorreta. Gabarito: '+String.fromCharCode(65+q[2])+'.')+'</div><div class="ex"><b>Comentário:</b> '+q[3]+'</div><div class="row" style="margin-top:10px">'+(p.k?'<button class="btn sec" data-au="'+p.k+'">Ir para a aula</button>':'')+(p.mod&&p.top!=null&&p.top!==undefined?'<button class="btn sec" data-qt="'+p.mod+':'+p.top+'">Revisar o tópico</button>':'')+'</div>';
+h+='<div class="row" style="margin-top:14px"><button class="btn sec" data-qn="-1"'+(QV.i==0?' disabled':'')+'>Anterior</button><button class="btn" data-qn="1"'+(QV.i>=n-1?' disabled':'')+'>Próxima</button></div></div>';return h}
+function erR(){var E=ERRS(),h='<div class="c"><h2>Caderno de erros</h2><p class="mu">Reúne as questões que você errou (nas aulas, no treino, no material preliminar e nos simulados, inclusive as deixadas em branco). Refaça cada uma: ao acertar, ela sai do caderno.</p>';
+if(!E.length)return h+'</div><div class="c empty">'+ic("check",28)+'<p>Nenhum erro registrado até agora. Responda questões ou faça um simulado.</p><button class="btn" data-nv="qs">Resolver questões</button></div>';
+var cnt={};E.forEach(function(p){cnt[p.d]=(cnt[p.d]||0)+1});
+h+='<div class="chips">'+Object.keys(cnt).map(function(d){return '<span class="badge">'+SN[d]+': '+cnt[d]+'</span>'}).join(" ")+'</div><div class="row"><button class="btn" data-rt="all">Refazer todos ('+E.length+')</button></div></div>';
+E.forEach(function(p){var a=p.get(),q=p.q;h+='<div class="c"><div class="qh"><span class="badge">'+SN[p.d]+'</span><span class="mu">'+p.lab+'</span></div><p><b>'+q[0]+'</b></p><details><summary>Ver resposta e comentário</summary><p>'+(a!==undefined&&a!==q[2]?'Sua resposta: '+String.fromCharCode(65+a)+') '+q[1][a]:'Errada ou em branco em um simulado.')+'</p><p>Gabarito: <b>'+String.fromCharCode(65+q[2])+') '+q[1][q[2]]+'</b></p><div class="ex">'+q[3]+'</div></details><div class="row" style="margin-top:8px"><button class="btn" data-rt="'+p.key+'">Refazer</button></div></div>'});
+return h}
+function bars(rows){return '<div class="bch">'+rows.map(function(r){return '<div class="br"><span>'+r[0]+'</span><div class="bt"><i style="width:'+(r[1]||0)+'%"></i></div><span class="bv">'+(r[1]==null?'—':r[1]+'%')+'</span></div>'}).join("")+'</div>'}
+function line(pts){if(!pts.length)return '<p class="empty">Nenhum simulado realizado ainda. Faça um simulado para ver sua evolução.</p>';var W=300,H=150,pl=36,pr=22,pt=10,pb=22,n=pts.length,xs=function(i){return n==1?W/2:pl+(W-pl-pr)*i/(n-1)},ys=function(v){return pt+(H-pt-pb)*(1-v/100)},g='';
+[0,50,100].forEach(function(v){g+='<line x1="'+pl+'" x2="'+(W-pr)+'" y1="'+ys(v)+'" y2="'+ys(v)+'" class="gl"/><text x="'+(pl-4)+'" y="'+(ys(v)+3)+'" text-anchor="end" class="gt">'+v+'%</text>'});
+return '<svg viewBox="0 0 '+W+' '+H+'" class="chart" role="img" aria-label="Evolução da nota nos simulados">'+g+(n>1?'<polyline points="'+pts.map(function(p,i){return xs(i)+','+ys(p[1])}).join(' ')+'" class="gp"/>':'')+pts.map(function(p,i){return '<circle cx="'+xs(i)+'" cy="'+ys(p[1])+'" r="4" class="gd"/><text x="'+xs(i)+'" y="'+(H-6)+'" text-anchor="middle" class="gt">'+p[0]+'</text>'}).join('')+'</svg>'}
+function cols(vals,labs){var W=300,H=140,pl=24,pb=20,pt=10,n=vals.length,mx=Math.max.apply(null,vals.concat([1])),bw=(W-pl-6)/n;
+return '<svg viewBox="0 0 '+W+' '+H+'" class="chart" role="img" aria-label="Questões respondidas por dia"><line x1="'+pl+'" x2="'+(W-4)+'" y1="'+(H-pb)+'" y2="'+(H-pb)+'" class="gl"/><text x="'+(pl-4)+'" y="'+(pt+4)+'" text-anchor="end" class="gt">'+mx+'</text><text x="'+(pl-4)+'" y="'+(H-pb+3)+'" text-anchor="end" class="gt">0</text>'+vals.map(function(v,i){var hh=(H-pt-pb)*v/mx;return '<rect x="'+(pl+i*bw+2)+'" y="'+(H-pb-hh)+'" width="'+(bw-4)+'" height="'+hh+'" rx="2" class="cb"/><text x="'+(pl+i*bw+bw/2)+'" y="'+(H-6)+'" text-anchor="middle" class="gt">'+labs[i]+'</text>'}).join('')+'</svg>'}
+function pfR(){var st=STATS(),sh=S.sh||[],E=ERRS(),np=POOL().length,h='<div class="c"><h2>Desempenho</h2><p class="mu">Todas as estatísticas vêm das respostas registradas neste navegador. Enquanto não houver dados, os gráficos aparecem vazios.</p></div>';
+var best=0;sh.forEach(function(x){best=Math.max(best,Math.round(x.ok/x.n*100))});
+h+='<div class="kpis">'+kpi("Questões respondidas",st.tot.n,"de "+np+" no banco")+kpi("Taxa de acerto",st.tot.n?pct(st.tot.ok,st.tot.n)+"%":"—",st.tot.n?st.tot.ok+" acertos":"Sem respostas ainda",st.tot.n?pct(st.tot.ok,st.tot.n):0)+kpi("Erros a revisar",E.length,"no caderno de erros")+kpi("Simulados",sh.length,sh.length?"Melhor nota: "+best+"%":"Nenhum ainda")+'</div>';
+h+='<div class="grid2"><section class="c"><h3>Acertos por disciplina</h3>'+bars(SUB.map(function(s){var b=st.by[s[0]];return [SN[s[0]]+' <small class="mu">('+b.n+')</small>',b.n?pct(b.ok,b.n):null]}))+'<p class="mu">Entre parênteses, questões respondidas. Para aprovação, a prova exige 50% de acertos (25 de 50 pontos).</p></section>';
+var pts=sh.slice(-10).map(function(x){return[new Date(x.t).toLocaleDateString("pt-BR",{day:"2-digit",month:"2-digit"}),Math.round(x.ok/x.n*100)]});
+h+='<section class="c"><h3>Evolução nos simulados</h3>'+line(pts)+'</section>';
+var vals=[],labs=[],tot14=0;for(var i=13;i>=0;i--){var d=new Date();d.setDate(d.getDate()-i);var v=(S.act||{})[dkey(d)]||0;vals.push(v);tot14+=v;labs.push(d.getDate())}
+h+='<section class="c"><h3>Questões respondidas por dia (14 dias)</h3>'+(tot14?cols(vals,labs):'<p class="empty">Sem respostas registradas no período. O registro diário começa a partir de agora.</p>')+'</section>';
+var tp={};E.forEach(function(p){var nm,go;if(p.k){nm=L[p.k].t;go='data-au="'+p.k+'"'}else if(p.mod&&p.top!=null){nm=SN[p.mod]+' › '+nmod(p.mod).n[p.top][0];go='data-qt="'+p.mod+':'+p.top+'"'}else return;var k=nm+'|'+go;tp[k]=(tp[k]||0)+1});
+var tl=Object.keys(tp).sort(function(a,b){return tp[b]-tp[a]}).slice(0,6);
+h+='<section class="c"><h3>Assuntos para revisar</h3>'+(tl.length?tl.map(function(k){var p=k.split('|');return '<div class="it"><div class="tx">'+p[0]+' <span class="mu">('+tp[k]+' erro'+(tp[k]>1?'s':'')+')</span></div><button class="btn sec" '+p[1]+'>Revisar</button></div>'}).join(""):'<p class="empty">Nenhum erro registrado até agora.</p>')+'</section></div>';
+h+='<section class="c"><h3>Histórico de simulados</h3>'+(sh.length?'<div class="tbl"><table><tr><th>Data</th><th>Tipo</th><th>Acertos</th><th>%</th><th>Tempo</th></tr>'+sh.slice(-10).reverse().map(function(x){return '<tr><td>'+new Date(x.t).toLocaleDateString("pt-BR")+'</td><td>'+(x.mode=="all"?"Completo":x.mode=="err"?"Revisão de erros":SN[x.mode])+'</td><td>'+x.ok+' / '+x.n+'</td><td>'+Math.round(x.ok/x.n*100)+'%</td><td>'+fmtT(x.dur||0)+'</td></tr>'}).join("")+'</table></div>':'<p class="empty">Nenhum simulado realizado ainda.</p>')+'</section>';
+return h}
+function shH(){var sh=S.sh||[];if(!sh.length)return '';return '<div class="c"><h3>Últimos simulados</h3>'+sh.slice(-5).reverse().map(function(x){return '<div class="row" style="padding:5px 0"><span>'+new Date(x.t).toLocaleDateString("pt-BR")+' · '+(x.mode=="all"?"Completo":x.mode=="err"?"Revisão de erros":SN[x.mode])+'</span><b>'+x.ok+'/'+x.n+' ('+Math.round(x.ok/x.n*100)+'%) · '+fmtT(x.dur||0)+'</b></div>'}).join("")+'</div>'}
+function updTh(){var dk=document.documentElement.getAttribute("data-theme")=="dark";document.querySelectorAll(".thm").forEach(function(b){b.innerHTML=ic(dk?"sun":"moon",18)+'<span>'+(dk?"Modo claro":"Modo escuro")+'</span>';b.setAttribute("aria-label",dk?"Ativar modo claro":"Ativar modo escuro")})}
+function setTheme(t){document.documentElement.setAttribute("data-theme",t);try{localStorage.setItem("casan_tema",t)}catch(e){}updTh()}
+function closeSide(){document.getElementById("side").classList.remove("open");document.getElementById("scrim").classList.remove("on")}
+document.addEventListener("click",function(e){var t=e.target.closest&&e.target.closest("[data-nv],[data-df],[data-qd],[data-qsr],[data-qu],[data-qa],[data-qn],[data-qx],[data-rt],[data-qt],[data-sn],[data-sc],[data-th],[data-mb]");if(!t)return;var D=t.dataset;
+if(D.mb!==undefined){document.getElementById("side").classList.toggle("open");document.getElementById("scrim").classList.toggle("on");return}
+if(D.th!==undefined){setTheme(document.documentElement.getAttribute("data-theme")=="dark"?"light":"dark");return}
+if(D.nv){cur=D.nv;if(cur=="au"){AUC=null;AUF=null}closeSide();draw();scrollTo(0,0);return}
+if(D.df){AUF=D.df=="all"?null:D.df;AUC=null;cur="au";closeSide();draw();scrollTo(0,0);return}
+if(D.sn){if(D.sn=="s"){var v=(document.getElementById("nmi").value||"").trim();if(v){S.nm=v.slice(0,30);save();draw()}}else{S.nm="";save();draw()}return}
+if(D.sc){var el=document.getElementById(D.sc);if(el&&el.scrollIntoView)el.scrollIntoView({behavior:"smooth",block:"start"});return}
+if(D.qt){var p=D.qt.split(":");openT(p[0],+p[1]);return}
+if(D.qd){QV.d=D.qd;qvBuild();draw();return}
+if(D.qsr){QV.s=D.qsr;qvBuild();draw();return}
+if(D.qu){QV.u=!QV.u;qvBuild();draw();return}
+if(D.qx){QV.mode="free";qvBuild();draw();return}
+if(D.qn){QV.i=Math.max(0,Math.min(QV.list.length-1,QV.i+(+D.qn)));draw();scrollTo(0,0);return}
+if(D.rt){var E=ERRS().map(function(p){return p.key});QV.list=D.rt=="all"?E:[D.rt];QV.i=0;QV.mode="retry";QV.sess={};cur="qs";closeSide();draw();scrollTo(0,0);return}
+if(D.qa!==undefined){var P2=PMAP(),k=QV.list[QV.i],pp=P2[k],j=+D.qa;if(!pp)return;
+if(QV.mode=="retry"){if(QV.sess[k]!==undefined)return;QV.sess[k]=j;if(j==pp.q[2]){S.rs=S.rs||{};S.rs[k]=1;if(S.se)delete S.se[k]}bump()}
+else{if(pp.get()!==undefined)return;pp.set(j);if(S.rs)delete S.rs[k];bump()}
+draw()}});
+setTimeout(function(){},0);setInterval(function(){if(typeof SM!="undefined"&&SM&&!SM.fin&&document.getElementById("sp"))prog()},1000);
+updTh();
+function mod(m){var h='<div class="cl-n"><b>Material preliminar.</b> Conteúdo anterior à leitura do Anexo III, com questões de 4 alternativas. Para o conteúdo alinhado ao edital, use a área Aulas.</div><div class="c"><h2>'+m.t+'</h2><p class="mu">Leia o resumo e depois responda às questões.</p>'+m.n.map(function(n){return '<details><summary>'+n[0]+'</summary><p>'+n[1]+'</p></details>'}).join("")+'</div><h2>Atividades</h2>';
+m.q.forEach(function(q,i){h+='<div class="c q" id="q'+i+'"><p>'+(i+1)+'. '+q[0]+'</p>'+q[1].map(function(o,j){return '<button class="o" data-i="'+i+'" data-j="'+j+'">'+'<span class="lt">'+String.fromCharCode(65+j)+'</span><span>'+o+'</span></button>'}).join("")+'<div class="ex" hidden></div></div>'});
 return h+'<div class="c row"><b id="sc"></b><button class="btn" id="rs">Refazer módulo</button></div>'}
 function wire(m){var a=S[m.id]=S[m.id]||{};
-function show(i){var q=m.q[i],box=document.getElementById("q"+i),bs=box.querySelectorAll(".o");bs.forEach(function(b){var j=+b.dataset.j;b.disabled=true;if(j==q[2])b.classList.add("ok");else if(j==a[i])b.classList.add("no")});var e=box.querySelector(".ex");e.hidden=false;e.textContent=(a[i]==q[2]?"✔ Correto. ":"✘ Resposta certa: "+String.fromCharCode(65+q[2])+". ")+q[3]}
+function show(i){var q=m.q[i],box=document.getElementById("q"+i),bs=box.querySelectorAll(".o");bs.forEach(function(b){var j=+b.dataset.j;b.disabled=true;if(j==q[2])b.classList.add("ok");else if(j==a[i])b.classList.add("no")});var e=box.querySelector(".ex");e.hidden=false;e.textContent=(a[i]==q[2]?"Correto. ":"Incorreta. Resposta certa: "+String.fromCharCode(65+q[2])+". ")+q[3]}
 function tot(){document.getElementById("sc").textContent="Placar: "+sc(m)+" / "+m.q.length+" ("+dn(m)+" respondidas)"}
-document.querySelectorAll(".o").forEach(function(b){b.onclick=function(){var i=+b.dataset.i;if(a[i]!==undefined)return;a[i]=+b.dataset.j;save();show(i);tot()}});
+document.querySelectorAll(".o").forEach(function(b){b.onclick=function(){var i=+b.dataset.i;if(a[i]!==undefined)return;a[i]=+b.dataset.j;bump();show(i);tot()}});
 for(var k in a)show(+k);tot();
 document.getElementById("rs").onclick=function(){S[m.id]={};save();draw()}}
 var CR=[[10,"12:00","13:00","Português","Crase e concordância"],[10,"19:00","20:00","Específicos","Lei 13.303 e empresas estatais"],[10,"20:00","21:00","Raciocínio","Porcentagem e regra de três"],[11,"12:00","13:00","Informática","Segurança e LGPD"],[11,"19:00","20:30","Raciocínio","Equações, conjuntos e frações"],[11,"20:30","21:00","Revisão","Refazer os erros do dia"],[12,"12:00","13:00","Português","Interpretação de texto"],[12,"19:00","21:00","Específicos","Administração geral, PDCA e arquivo"],[13,"12:00","13:00","Conhecimentos Gerais","Santa Catarina e atualidades"],[13,"19:00","21:00","Português","Sintaxe, regência e pontuação, com questões"],[14,"08:00","12:00","Específicos","Teoria e questões"],[14,"14:00","17:00","Raciocínio","Sequências, regra de três composta e sistemas"],[14,"17:00","18:00","Informática","Excel e Windows"],[15,"08:00","12:00","Português","Interpretação e questões da AOCP"],[15,"14:00","17:00","Específicos","Somente questões"],[15,"17:00","18:00","Conhecimentos Gerais","Revisão"],[16,"12:00","13:00","Informática","Word, Excel e nuvem"],[16,"19:00","21:00","Raciocínio","Questões variadas"],[17,"12:00","13:00","Conhecimentos Gerais","Meio ambiente e atualidades"],[17,"19:00","21:00","Específicos","Questões e revisão de legislação"],[18,"12:00","13:00","Português","Crase, regência e concordância"],[18,"19:00","21:00","Simulado","Mini-simulado de 25 questões em 2h"],[19,"12:00","13:00","Revisão","Refazer os erros do mini-simulado"],[19,"19:00","21:00","Específicos","Revisão geral"],[20,"12:00","12:30","Informática","Revisão rápida"],[20,"12:30","13:00","Conhecimentos Gerais","Revisão rápida"],[20,"19:00","20:00","Raciocínio","Revisão leve"],[20,"20:00","21:00","Português","Revisão leve"],[21,"08:00","12:00","Simulado","Simulado completo de 50 questões, cronometrado, e correção"],[21,"14:00","16:00","Revisão","Revisar somente os erros; depois descansar e separar documento e caneta"]];
@@ -186,7 +301,7 @@ var DS=["Dom","Seg","Ter","Qua","Qui","Sex","Sáb"],ti=null,sent={};
 function ts(r,k){var p=r[k].split(":");return new Date(2026,10,r[0],+p[0],+p[1])}
 function fmt(ms){var m=Math.round(ms/6e4),h=Math.floor(m/60),d=Math.floor(h/24);return d>0?d+" d "+h%24+" h":h>0?h+" h "+m%60+" min":m+" min"}
 function nowCard(){var n=new Date(),cu=null,nx=null;CR.forEach(function(r,i){var a=ts(r,1),b=ts(r,2);if(n>=a&&n<b)cu=i;else if(a>n&&nx===null)nx=i});
-if(cu!==null)return '<div class="c" style="border-color:var(--ok)"><h3>⏰ Hora de estudar agora</h3><p>'+CR[cu][3]+': '+CR[cu][4]+' (até '+CR[cu][2]+')</p><button class="btn" data-go="'+cu+'">Estudar agora →</button></div>';
+if(cu!==null)return '<div class="c" style="border-color:var(--ok)"><h3>'+ic("clock",18)+' Hora de estudar agora</h3><p>'+CR[cu][3]+': '+CR[cu][4]+' (até '+CR[cu][2]+')</p><button class="btn" data-go="'+cu+'">Estudar agora →</button></div>';
 if(nx!==null)return '<div class="c"><h3>Próximo bloco em '+fmt(ts(CR[nx],1)-n)+'</h3><p>'+CR[nx][3]+': '+CR[nx][4]+' ('+CR[nx][1]+' às '+CR[nx][2]+')</p><button class="btn" data-go="'+nx+'">Ir para o assunto →</button></div>';
 return '<div class="c"><h3>Sem blocos pendentes</h3><p>Descanse e boa prova no domingo, 22/11!</p></div>'}
 function cron(){var D=S.cr||{},h='<div class="c"><h2>Cronograma até a prova</h2><p class="mu">Marque cada bloco ao concluir. Os lembretes avisam 5 minutos antes de cada bloco, mas só funcionam com esta página aberta. Para alertas com o app fechado, importe o arquivo de calendário (.ics) que enviei no chat.</p><div class="row"><button class="btn" id="rm"></button><button class="btn" id="ts" style="background:var(--mu)">Testar lembrete</button></div></div><div id="now">'+nowCard()+'</div><div class="c"><div class="bar"><i id="pb"></i></div><p class="mu" id="pt2"></p></div>',last=0,today=new Date().getDate();
@@ -195,10 +310,10 @@ h+='<div class="row" style="padding:6px 0;justify-content:flex-start;gap:10px"><
 return h+'</div><div class="c"><h3>22/11 · Prova objetiva</h3><p class="mu">Confirme horário, local e documentos no edital.</p></div>'}
 function cronWire(){S.cr=S.cr||{};function pg(){var k=Object.keys(S.cr).filter(function(x){return S.cr[x]}).length;document.getElementById("pb").style.width=(k/CR.length*100)+"%";document.getElementById("pt2").textContent=k+" de "+CR.length+" blocos concluídos"}
 document.querySelectorAll("input[data-k]").forEach(function(c){c.onchange=function(){S.cr[c.dataset.k]=c.checked;save();pg()}});
-var rm=document.getElementById("rm");function lb(){rm.textContent=S.al?"🔔 Lembretes ligados (clique para desligar)":"🔕 Ativar lembretes"}lb();
+var rm=document.getElementById("rm");function lb(){rm.textContent=S.al?"Lembretes ligados (clique para desligar)":"Ativar lembretes"}lb();
 rm.onclick=function(){S.al=!S.al;save();if(S.al){try{Notification.requestPermission()}catch(e){}startT();tick()}else{clearInterval(ti);ti=null}lb()};
 document.getElementById("ts").onclick=function(){try{Notification.requestPermission()}catch(e){}ping("Lembrete de teste","É assim que o aviso de estudo vai aparecer.")};pg()}
-function ping(t,b){var o=document.getElementById("toast");if(o)o.remove();var d=document.createElement("div");d.id="toast";d.setAttribute("role","alert");d.style.cssText="position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));max-width:560px;margin:auto;background:var(--pr);color:#fff;padding:12px 14px;border-radius:10px;z-index:9;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,.3)";d.innerHTML="<b>⏰ "+t+"</b><br>"+b;d.onclick=function(){d.remove()};document.body.appendChild(d);setTimeout(function(){d.remove()},3e4);try{if(window.Notification&&Notification.permission==="granted")new Notification(t,{body:b})}catch(e){}}
+function ping(t,b){var o=document.getElementById("toast");if(o)o.remove();var d=document.createElement("div");d.id="toast";d.setAttribute("role","alert");d.style.cssText="position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));max-width:560px;margin:auto;background:var(--pr);color:#fff;padding:12px 14px;border-radius:10px;z-index:9;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,.3)";d.innerHTML="<b>"+t+"</b><br>"+b;d.onclick=function(){d.remove()};document.body.appendChild(d);setTimeout(function(){d.remove()},3e4);try{if(window.Notification&&Notification.permission==="granted")new Notification(t,{body:b})}catch(e){}}
 function tick(){var n=new Date();CR.forEach(function(r,i){var df=ts(r,1)-n;if(df<=3e5&&df>-6e4&&!sent[i]&&!(S.cr||{})[i]){sent[i]=1;ping("Estudo em "+Math.max(0,Math.round(df/6e4))+" min: "+r[3],r[4])}});var e=document.getElementById("now");if(e)e.innerHTML=nowCard()}
 function startT(){if(!ti)ti=setInterval(tick,3e4)}
 var TOP={pt:[1,2,3,4,3],rl:[0,1,4,2,3],cg:[0,0,2,0,2],in:[0,1,3,3,3],es:[1,1,2,3,2]};
@@ -231,27 +346,31 @@ es:[["As licitações das empresas estatais seguem principalmente a:",["Lei 14.1
 function nm(id){return M.filter(function(x){return x.id==id})[0].t}
 function SQ(id){var m=M.filter(function(x){return x.id==id})[0];return m.q.map(function(q,i){return q.concat(TOP[id][i])}).concat(EX[id])}
 var SM=null;
-function prog(){var e=document.getElementById("sp");if(e)e.textContent="Respondidas: "+Object.keys(SM.a).length+" de "+SM.L.length}
-function simR(){var h;if(!SM){h='<div class="c"><h2>📝 Simulado</h2><p class="mu">10 questões por matéria e 50 no completo. Responda tudo, finalize e veja a nota com o resumo do que errou e o que revisar.</p>';
+function prog(){var e=document.getElementById("sp");if(e&&SM)e.textContent="Respondidas: "+Object.keys(SM.a).length+" de "+SM.L.length+" · Tempo: "+fmtT(Math.round((Date.now()-SM.t0)/1000))}
+function simR(){var h;if(!SM){h='<div class="c"><h2>Simulado</h2><p class="mu">10 questões por matéria e 50 no completo. Responda tudo, finalize e veja a nota com o resumo do que errou e o que revisar.</p>';
 ["pt","rl","cg","in","es"].forEach(function(id){var b=(S.sim||{})[id];h+='<div class="row" style="padding:6px 0"><span>'+nm(id)+(b!=null?' <span class="mu">· último: '+b+'/10</span>':'')+'</span><button class="btn" data-sm="'+id+'">Iniciar</button></div>'});
-return h+'<div class="row" style="padding:6px 0"><b>Simulado completo (50)</b><button class="btn" data-sm="all">Iniciar</button></div></div>'}
+return h+'<div class="row" style="padding:6px 0"><b>Simulado completo (50)</b><button class="btn" data-sm="all">Iniciar</button></div></div>'+shH()}
 if(SM.fin)return simRes();
 h='<div class="c"><h2>'+SM.t+'</h2><p class="mu" id="sp"></p></div>';
-SM.L.forEach(function(it,k){var q=it.q;h+='<div class="c q"><p>'+(k+1)+'. '+q[0]+'</p>'+q[1].map(function(o,j){return '<button class="o'+(SM.a[k]===j?' sel':'')+'" data-sa="'+k+'" data-sj="'+j+'">'+String.fromCharCode(65+j)+') '+o+'</button>'}).join('')+'</div>'});
+SM.L.forEach(function(it,k){var q=it.q;h+='<div class="c q"><p>'+(k+1)+'. '+q[0]+'</p>'+q[1].map(function(o,j){return '<button class="o'+(SM.a[k]===j?' sel':'')+'" data-sa="'+k+'" data-sj="'+j+'">'+'<span class="lt">'+String.fromCharCode(65+j)+'</span><span>'+o+'</span></button>'}).join('')+'</div>'});
 return h+'<div class="c row"><button class="btn" data-sm="x" style="background:var(--mu)">Cancelar</button><button class="btn" data-sf="1">Finalizar e ver resultado</button></div>'}
 function simRes(){var f=SM.fin,n=SM.L.length,pc=Math.round(f.ok/n*100),ids=Object.keys(f.per),g={},bt='<div class="c row">'+(f.wr.length?'<button class="btn" data-sm="err">Refazer só os erros</button>':'')+'<button class="btn" data-sm="x" style="background:var(--mu)">Novo simulado</button></div>',
-h='<div class="c"><h2>Resultado</h2><div class="big">'+f.ok+' / '+n+' ('+pc+'%)</div><p class="mu">'+(pc>=70?'Bom desempenho. Revise os erros abaixo para consolidar.':pc>=50?'Você está no caminho. Foque nos tópicos abaixo.':'Priorize a revisão dos tópicos abaixo antes de refazer o simulado.')+'</p>';
+h='<div class="c"><h2>Resultado</h2><div class="big">'+f.ok+' / '+n+' ('+pc+'%)</div><p class="mu">Tempo: '+fmtT(f.dur||0)+'. '+(pc>=70?'Bom desempenho. Revise os erros abaixo para consolidar.':pc>=50?'Você está no caminho. Foque nos tópicos abaixo.':'Priorize a revisão dos tópicos abaixo antes de refazer o simulado.')+'</p>';
 if(ids.length>1)h+='<div class="tbl"><table><tr><th>Matéria</th><th>Acertos</th></tr>'+ids.map(function(id){return '<tr><td>'+nm(id)+'</td><td>'+f.per[id][0]+' / '+f.per[id][1]+'</td></tr>'}).join('')+'</table></div>';
 h+='</div>';
-if(!f.wr.length)return h+'<div class="c"><h3>Nenhum erro! 🎉</h3><p>Refaça os simulados nos próximos dias para manter o ritmo.</p></div>'+bt;
+if(!f.wr.length)return h+'<div class="c"><h3>Nenhum erro!</h3><p>Refaça os simulados nos próximos dias para manter o ritmo.</p></div>'+bt;
 f.wr.forEach(function(k){var it=SM.L[k],key=it.m+":"+it.q[4];g[key]=(g[key]||0)+1});
 h+='<div class="c"><h2>O que revisar primeiro</h2><p class="mu">Tópicos em que você mais errou, do maior para o menor número de erros.</p>'+Object.keys(g).sort(function(a,b){return g[b]-g[a]}).map(function(key){var p=key.split(":"),m=M.filter(function(x){return x.id==p[0]})[0];return '<div class="row" style="padding:6px 0"><span>'+m.t+' › '+m.n[p[1]][0]+' <span class="mu">('+g[key]+' erro'+(g[key]>1?'s':'')+')</span></span><button class="btn" data-rv="'+key+'">Revisar →</button></div>'}).join('')+'</div><div class="c"><h2>Suas respostas erradas</h2></div>';
 f.wr.forEach(function(k){var q=SM.L[k].q,a=SM.a[k];h+='<div class="c"><p><b>'+(k+1)+'. '+q[0]+'</b></p><p>Sua resposta: '+(a===undefined?'em branco':String.fromCharCode(65+a)+') '+q[1][a])+'</p><p>Correta: <b>'+String.fromCharCode(65+q[2])+') '+q[1][q[2]]+'</b></p><div class="ex">'+q[3]+'</div></div>'});
 return h+bt}
-function finish(){var ok=0,per={},wr=[];SM.L.forEach(function(it,k){var c=SM.a[k]===it.q[2];per[it.m]=per[it.m]||[0,0];per[it.m][1]++;if(c){ok++;per[it.m][0]++}else wr.push(k)});SM.fin={ok:ok,per:per,wr:wr};if(SM.mode!="err"){S.sim=S.sim||{};for(var id in per)S.sim[id]=per[id][0];save()}draw();scrollTo(0,0)}
+function finish(){var ok=0,per={},wr=[];S.se=S.se||{};S.rs=S.rs||{};
+SM.L.forEach(function(it,k){var c=SM.a[k]===it.q[2],nq=nmod(it.m).q.length,key=it.ix<nq?"m:"+it.m+":"+it.ix:"x:"+it.m+":"+(it.ix-nq);per[it.m]=per[it.m]||[0,0];per[it.m][1]++;if(c){ok++;per[it.m][0]++;delete S.se[key]}else{wr.push(k);S.se[key]=1;delete S.rs[key]}});
+var dur=Math.round((Date.now()-SM.t0)/1000);SM.fin={ok:ok,per:per,wr:wr,dur:dur};
+if(SM.mode!="err"){S.sim=S.sim||{};for(var id in per)S.sim[id]=per[id][0];S.sh=S.sh||[];S.sh.push({t:Date.now(),mode:SM.mode,ok:ok,n:SM.L.length,dur:dur});if(S.sh.length>50)S.sh.shift()}
+save();draw();scrollTo(0,0)}
 function openT(id,ix){cur=id;draw();var d=document.querySelectorAll("details")[ix];if(d){d.open=true;d.scrollIntoView({behavior:"smooth",block:"start"});d.style.background="var(--okb)"}}
 document.addEventListener("click",function(e){var t=e.target.closest&&e.target.closest("[data-sm],[data-sa],[data-sf],[data-rv]");if(!t)return;
-if(t.dataset.sm){var v=t.dataset.sm;if(v=="x")SM=null;else if(v=="err"){var w=SM.fin.wr.map(function(k){return SM.L[k]});SM={t:"Revisão dos erros",L:w,a:{},fin:0,mode:"err"}}else{var ids=v=="all"?["pt","rl","cg","in","es"]:[v],L=[];ids.forEach(function(id){SQ(id).forEach(function(q){L.push({m:id,q:q})})});SM={t:v=="all"?"Simulado completo":"Simulado: "+nm(v),L:L,a:{},fin:0,mode:v}}draw();prog();scrollTo(0,0)}
+if(t.dataset.sm){var v=t.dataset.sm;if(v=="x")SM=null;else if(v=="err"){var w=SM.fin.wr.map(function(k){return SM.L[k]});SM={t:"Revisão dos erros",L:w,a:{},fin:0,mode:"err",t0:Date.now()}}else{var ids=v=="all"?["pt","rl","cg","in","es"]:[v],L=[];ids.forEach(function(id){SQ(id).forEach(function(q,ix){L.push({m:id,q:q,ix:ix})})});SM={t:v=="all"?"Simulado completo":"Simulado: "+nm(v),L:L,a:{},fin:0,mode:v,t0:Date.now()}}draw();prog();scrollTo(0,0)}
 else if(t.dataset.sa){SM.a[+t.dataset.sa]=+t.dataset.sj;document.querySelectorAll('[data-sa="'+t.dataset.sa+'"]').forEach(function(b){b.classList.toggle("sel",b===t)});prog()}
 else if(t.dataset.sf)finish();
 else if(t.dataset.rv){var p=t.dataset.rv.split(":");openT(p[0],+p[1])}});
@@ -457,27 +576,25 @@ L.es6=mk("ES-6 · Administração de Materiais, Patrimônio e Logística","Cobre
 ["O inventário em que parte dos itens é contada ao longo do ano, em ciclos, é o:",["Geral.","Rotativo ou cíclico.","Fiscal.","Reverso.","Tributário."],1,"No inventário rotativo, a contagem é distribuída ao longo do período; no geral, todos os itens são contados em data definida."]]]);
 var AUC=null;
 function edR(){var tot=0,dv=0,st=0;SUB.forEach(function(s){CK[s[0]].forEach(function(t,i){tot++;if(L[s[0]+(i+1)])dv++})});Object.keys(S.dn||{}).forEach(function(k){if(S.dn[k])st++});
-var h='<div class="c"><h2>📋 Edital 001/2026 · Cargo 202: Assistente Administrativo</h2><p class="mu">Fonte: cópia do Edital de Abertura (nível médio), Anexo III. O site da AOCP indica retificações em 04/09 e 21/09/2026; a cópia que li não traz essa marca e o site da banca bloqueia leitura automática. <b>Confira no site da AOCP se algum conteúdo mudou.</b> A legislação aplicável é a vigente na data de publicação do edital (04/09/2026).</p></div>'+
+var h='<div class="c"><h2>Edital 001/2026 · Cargo 202: Assistente Administrativo</h2><p class="mu">Fonte: cópia do Edital de Abertura (nível médio), Anexo III. O site da AOCP indica retificações em 04/09 e 21/09/2026; a cópia que li não traz essa marca e o site da banca bloqueia leitura automática. <b>Confira no site da AOCP se algum conteúdo mudou.</b> A legislação aplicável é a vigente na data de publicação do edital (04/09/2026).</p></div>'+
 '<div class="c"><h3>A prova (dados do edital)</h3><ul><li>Prova objetiva em <b>22/11/2026</b>, de manhã, com <b>4 horas</b> de duração (inclui o preenchimento da folha de respostas).</li><li>50 questões, cada uma com <b>5 alternativas</b>, 1 ponto cada. Mínimo para aprovação: <b>25 pontos</b> (50%).</li><li>Distribuição: Português 10, Raciocínio Lógico 10, Conhecimentos Gerais e Atualidades 5, Informática 5, Específicos 20.</li><li>Levar caneta esferográfica transparente azul ou preta, documento oficial com foto e o Cartão de Informação (disponível em 16/11). Chegar com 45 minutos de antecedência ao fechamento dos portões. Só é possível sair após 60 minutos de prova.</li><li>Gabarito preliminar em 23/11; recursos em 24 e 25/11.</li><li>Desempate: maior idade (candidatos com 60+), depois maior nota em Específicos, Português e Informática.</li></ul></div>'+
 '<div class="c"><h3>Cobertura do Anexo III</h3><div class="bar"><i style="width:'+(dv/tot*100)+'%"></i></div><p>'+dv+' de '+tot+' itens com aula completa ('+Math.round(dv/tot*100)+'%). '+st+' marcados como estudados.</p><p class="mu">Só são marcados como desenvolvidos os itens com aula completa. Os demais seguem como pendentes e não podem ser marcados como estudados. Material anterior (abas de matérias) é preliminar, tem questões com 4 alternativas e não segue fielmente o edital.</p></div>';
-SUB.forEach(function(s){var a=CK[s[0]],n=0;a.forEach(function(t,i){if(L[s[0]+(i+1)])n++});h+='<div class="c"><details><summary>'+s[1]+' ('+s[2]+') · '+n+' de '+a.length+' itens desenvolvidos</summary>'+a.map(function(t,i){var k=s[0]+(i+1),ok=!!L[k];return '<div class="row" style="padding:6px 0;border-top:1px solid var(--bd);justify-content:flex-start;gap:10px"><span>'+(ok?'✅':'⏳')+'</span><span style="flex:1">'+(i+1)+'. '+t+'<br><span class="mu">'+(ok?'Desenvolvido':'Pendente')+'</span></span>'+(ok?'<button class="btn" data-au="'+k+'">Abrir aula</button>':'')+'</div>'}).join('')+'</details></div>'});
-h+='<div class="c"><h3>16. Códigos e Políticas da CASAN</h3><p class="mu">Documentos publicados em ri.casan.com.br (consultados em 12/11/2026). Resumos, regras e questões <b>ainda não foram elaborados</b>: estão pendentes até eu ler cada documento.</p>'+CASAN.map(function(d){return '<div class="row" style="padding:5px 0"><span>⏳ <a href="'+CD+d[2]+'" target="_blank" rel="noopener">'+d[0]+'</a> <span class="mu">· publicado em '+d[1]+'</span></span></div>'}).join('')+'</div>';
+SUB.forEach(function(s){var a=CK[s[0]],n=0;a.forEach(function(t,i){if(L[s[0]+(i+1)])n++});h+='<div class="c"><details><summary>'+s[1]+' ('+s[2]+') · '+n+' de '+a.length+' itens desenvolvidos</summary>'+a.map(function(t,i){var k=s[0]+(i+1),ok=!!L[k];return '<div class="row" style="padding:6px 0;border-top:1px solid var(--bd);justify-content:flex-start;gap:10px"><span>'+ic(ok?"check":"clock",16)+'</span><span style="flex:1">'+(i+1)+'. '+t+'<br><span class="mu">'+(ok?'Desenvolvido':'Pendente')+'</span></span>'+(ok?'<button class="btn" data-au="'+k+'">Abrir aula</button>':'')+'</div>'}).join('')+'</details></div>'});
+h+='<div class="c"><h3>16. Códigos e Políticas da CASAN</h3><p class="mu">Documentos publicados em ri.casan.com.br (consultados em 12/11/2026). Resumos, regras e questões <b>ainda não foram elaborados</b>: estão pendentes até eu ler cada documento.</p>'+CASAN.map(function(d){return '<div class="row" style="padding:5px 0"><span>'+ic("clock",16)+' <a href="'+CD+d[2]+'" target="_blank" rel="noopener">'+d[0]+'</a> <span class="mu">· publicado em '+d[1]+'</span></span></div>'}).join('')+'</div>';
 return h}
-function auR(){if(AUC)return lesson(AUC);var h='<div class="c"><h2>🎓 Aulas</h2><p class="mu">Aulas completas, alinhadas ao Anexo III, com explicação, conceitos, exemplos, aplicações, quadros comparativos, memorização, pegadinhas, resumo, mapa mental, questões de fixação (5 alternativas) e gabarito comentado. As questões são de treino, elaboradas para este site; não são questões oficiais da AOCP.</p></div>';
-Object.keys(L).forEach(function(k){var l=L[k];h+='<div class="c row"><span><b>'+l.t+'</b><br><span class="mu">'+l.cob+' '+((S.dn||{})[k]?'✔ Estudada.':'')+'</span></span><button class="btn" data-au="'+k+'">Abrir</button></div>'});
-return h+'<div class="c"><p class="mu">Os demais itens do Anexo III estão pendentes. Veja a aba Edital.</p></div>'}
 function lesson(k){var l=L[k],h='<div class="c row"><button class="btn" data-ab="1" style="background:var(--mu)">← Aulas</button></div><div class="c"><h2>'+l.t+'</h2><p class="mu">'+l.cob+'</p></div>';
-l.sec.forEach(function(s){h+='<div class="c"><h3>'+s[0]+'</h3>'+s[1]+'</div>'});
-h+='<div class="c"><h3>10. Questões de fixação</h3><p class="mu">Questões de treino elaboradas para este site (não são oficiais), com 5 alternativas.</p></div>';
-l.q.forEach(function(q,i){h+='<div class="c q" id="aq'+i+'"><p>'+(i+1)+'. '+q[0]+'</p>'+q[1].map(function(o,j){return '<button class="o" data-aq="'+i+'" data-aj="'+j+'">'+String.fromCharCode(65+j)+') '+o+'</button>'}).join('')+'<div class="ex" hidden></div></div>'});
-h+='<div class="c"><h3>11. Gabarito comentado</h3>'+l.q.map(function(q,i){return '<details><summary>Questão '+(i+1)+': alternativa '+String.fromCharCode(65+q[2])+'</summary><p>'+q[3]+'</p></details>'}).join('')+'</div>';
+var CL=["","","exm","","","tip","warn","sum",""],CI=["","","info","","","star","warn","check",""],toc='<div class="toc">';l.sec.forEach(function(s,ix){toc+='<button data-sc="ls'+ix+'">'+(ix+1)+'</button>'});toc+='<button data-sc="lq">Questões</button><button data-sc="lg">Gabarito</button></div>';h+='<div class="c"><b>Nesta aula</b>'+toc+'</div>';
+l.sec.forEach(function(s,ix){h+='<section class="c ls '+CL[ix]+'" id="ls'+ix+'"><h3>'+(CI[ix]?ic(CI[ix],20)+' ':'')+s[0]+'</h3>'+s[1]+'</section>'});
+h+='<div class="c" id="lq"><h3>10. Questões de fixação</h3><p class="mu">Questões de treino elaboradas para este site (não são oficiais), com 5 alternativas.</p></div>';
+l.q.forEach(function(q,i){h+='<div class="c q" id="aq'+i+'"><p>'+(i+1)+'. '+q[0]+'</p>'+q[1].map(function(o,j){return '<button class="o" data-aq="'+i+'" data-aj="'+j+'">'+'<span class="lt">'+String.fromCharCode(65+j)+'</span><span>'+o+'</span></button>'}).join('')+'<div class="ex" hidden></div></div>'});
+h+='<div class="c" id="lg"><h3>11. Gabarito comentado</h3>'+l.q.map(function(q,i){return '<details><summary>Questão '+(i+1)+': alternativa '+String.fromCharCode(65+q[2])+'</summary><p>'+q[3]+'</p></details>'}).join('')+'</div>';
 return h+'<div class="c"><label><input type="checkbox" data-adn="'+k+'" '+((S.dn||{})[k]?'checked':'')+'> Marcar este assunto como estudado</label></div>'}
-function showA(k,i){var q=L[k].q[i],a=S.au[k],box=document.getElementById("aq"+i);if(!box)return;box.querySelectorAll(".o").forEach(function(b){var j=+b.dataset.aj;b.disabled=true;if(j==q[2])b.classList.add("ok");else if(j==a[i])b.classList.add("no")});var e=box.querySelector(".ex");e.hidden=false;e.textContent=(a[i]==q[2]?"✔ Correto. ":"✘ Resposta certa: "+String.fromCharCode(65+q[2])+". ")+q[3]}
+function showA(k,i){var q=L[k].q[i],a=S.au[k],box=document.getElementById("aq"+i);if(!box)return;box.querySelectorAll(".o").forEach(function(b){var j=+b.dataset.aj;b.disabled=true;if(j==q[2])b.classList.add("ok");else if(j==a[i])b.classList.add("no")});var e=box.querySelector(".ex");e.hidden=false;e.textContent=(a[i]==q[2]?"Correto. ":"Incorreta. Resposta certa: "+String.fromCharCode(65+q[2])+". ")+q[3]}
 function auWire(){if(!AUC)return;S.au=S.au||{};var a=S.au[AUC]=S.au[AUC]||{};Object.keys(a).forEach(function(i){showA(AUC,+i)})}
 document.addEventListener("click",function(e){var t=e.target.closest&&e.target.closest("[data-au],[data-ab],[data-aq]");if(!t)return;
-if(t.dataset.au){AUC=t.dataset.au;cur="au";draw();scrollTo(0,0)}
+if(t.dataset.au){AUC=t.dataset.au;cur="au";S.last={t:"au",k:AUC};save();closeSide();draw();scrollTo(0,0)}
 else if(t.dataset.ab){AUC=null;draw();scrollTo(0,0)}
-else if(t.dataset.aq){var k=AUC,i=+t.dataset.aq;S.au=S.au||{};S.au[k]=S.au[k]||{};if(S.au[k][i]!==undefined)return;S.au[k][i]=+t.dataset.aj;save();showA(k,i)}});
+else if(t.dataset.aq){var k=AUC,i=+t.dataset.aq;S.au=S.au||{};S.au[k]=S.au[k]||{};if(S.au[k][i]!==undefined)return;S.au[k][i]=+t.dataset.aj;bump();showA(k,i)}});
 document.addEventListener("change",function(e){var t=e.target;if(t.dataset&&t.dataset.adn){S.dn=S.dn||{};S.dn[t.dataset.adn]=t.checked;save()}});
 var TG=[["pt",1],["es",1],["rl",0],["in",3],["rl",2],["rev",-1],["pt",0],["es",2],["cg",0],["pt",3],["es",1],["rl",4],["in",1],["pt",0],["es",-1],["cg",-1],["in",1],["rl",-1],["cg",2],["es",-1],["pt",1],["sim",-1],["rev",-1],["es",-1],["in",-1],["cg",-1],["rl",-1],["pt",-1],["sim",-1],["rev",-1]];
 function go(i){var t=TG[i],id=t[0],ix=t[1],rev=0,el=null;
